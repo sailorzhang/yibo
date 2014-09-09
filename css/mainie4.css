@@ -101,7 +101,7 @@
 */
 .bg131{  position: absolute;   width: 100%;   height: 100%;   /* background: url(../images/1/flag_131.png) 50% 20% no-repeat; */   /* background-size: cover; */  top: 0px;  left: 0px;   /* transition: all 1s; */}
 .bg132{  position: absolute;   width: 100%;   height: 100%;   /* background: url(../images/1/flag_132.png) 50% 20% no-repeat; */   /* background-size: contain; */  top: 0px;  /* left: -100px; */   /* transition: all 1s; */}
-.bg133{  position: absolute;   width: 100%;   height: 100%;     background: url(../images/1/flag_135.png.bak) 50% 20% no-repeat;     /* background-size: contain; */  top: -1000px;  left: -100px;   transition: all 0s;}
+.bg133{  position: absolute;   width: 100%;   height: 100%;     background: url(../images/1/flag_135.png) 50% 20% no-repeat;     /* background-size: contain; */  top: -1000px;  left: -100px;   transition: all 0s;}
 .bg153{  position: absolute;   width: 100%;   height: 100%;     background: url(../images/1/flag15.png) 50% 20% no-repeat;     /* background-size: contain; */  top: -1000px;  left: -100px; transition: all 1s;}
 .bg163{  position: absolute;   width: 100%;   height: 100%;     background: url(../images/1/flag16.png) 50% 20% no-repeat;     /* background-size: contain; */  top: -1000px;  left: -100px; transition: all 1s;}
 .bg131 img{width: auto;   height: 100%;}

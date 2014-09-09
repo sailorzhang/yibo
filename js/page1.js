@@ -3,6 +3,7 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
       var _section1 = false;
     var hasShow = false;
     $(function(){
+        $('.standard').trigger('fitbg');
         $('.tiploading').remove();
         $(".section13 .bg img").attr("src","images/1/slide131.jpg");
         $(".bg131").animate({'left': '-2000px','top': '2000px'},0);
@@ -30,6 +31,12 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
                $(".bg133").animate({'left': '-2000px'},0,function(){ });
                 //$(".bg133").css("background-image","url(images/1/flag135.png)")
             }
+            if(index==9){
+                $('.bg1111_1').delay(100).animate({top:'-2000px'},2000);
+                $('.bg1111').animate({opacity:0},6000);
+                $(".bg10_2").delay(200).animate({'bottom': '250px',left:0},1000);
+                $('.bg10_1').delay(300).animate({'margin-left': '230px',right: '100px',top: '20px'},1000);
+            }
 			
       			if(!Modernizr.csstransitions){
       				extend.afterLoad(anchorLink, index, slideAnchor, slideIndex);
@@ -50,6 +57,15 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
                 $(".bg141").animate({'left': '-2000px','top': '2000px'},0);
                 $(".bg142").animate({'left': '2000px','top': '-2000px'},0);
                 $(".section13 .bg img").attr("src","images/1/slide131.jpg");
+            }
+            if(index==9){
+                $('.bg1111').stop(true).animate({opacity:1},0);
+                $('.bg1111_1').animate({top:0},0);
+                $(".bg10_2").animate({left:'-800px'});
+                $('.bg10_1').animate({right: '-2000px'});
+            }
+            if(index==8 && direction=='down'){
+                $('.bg1111_1').delay(100).animate({top:'-2000px'},2000);
             }
             if(index==12){
                 hasShow = false;
@@ -185,6 +201,14 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
            }
        }
    });
+
+    window.onresize=function(){
+        $('.standard').delay(100).trigger('fitbg');
+    };
+
+    $('.standard').on('fitbg',function(){
+        $(this).css('margin-left',-($(this).width() - $(document).width())/2);
+    });
 
 
     $('.first').coveringBad({

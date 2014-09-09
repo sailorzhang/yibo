@@ -90,9 +90,18 @@ var hasShow = false;
     }
 
       $(function(){
+          $('.standard').trigger('fitbg');
           $('.tiploading').remove();
           $(".bg2-11").delay(100).animate({"right":"200px"},1000,function(){});
       })
+
+    window.onresize=function(){
+        $('.standard').delay(100).trigger('fitbg');
+    };
+
+    $('.standard').on('fitbg',function(){
+        $(this).css('margin-left',-($(this).width() - $(document).width())/2);
+    });
     // $(window).resize(function() {
 
     if(document.location.href.indexOf("?visual=1")>0){

@@ -1,6 +1,10 @@
 define(['jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','coveringBad','head','modernizr'], function () {
     var hasShow = false;
     $(function(){
+        $('.standard').trigger('fitbg');
+        $('.bg3-13').animate({opacity:0},0,function(){
+            $(this).show();
+        });
         $('.tiploading').remove();
     });
     $('#fullpage').fullpage({
@@ -91,6 +95,14 @@ define(['jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','coveringBad','head'
             stopEvent();
             return false;
         }
+    });
+
+    window.onresize=function(){
+        $('.standard').delay(100).trigger('fitbg');
+    };
+
+    $('.standard').on('fitbg',function(){
+        $(this).css('margin-left',-($(this).width() - $(document).width())/2);
     });
 
     if(document.location.href.indexOf("?visual=1")>0){

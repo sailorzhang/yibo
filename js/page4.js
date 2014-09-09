@@ -109,7 +109,16 @@ define(['jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','coveringBad','head'
         }
     }
 
+    window.onresize=function(){
+        $('.standard').delay(100).trigger('fitbg');
+    };
+
+    $('.standard').on('fitbg',function(){
+        $(this).css('margin-left',-($(this).width() - $(document).width())/2);
+    });
+
 $(function(){
+        $('.standard').delay(100).trigger('fitbg');
         $('.tiploading').remove();
         $(".bg4-1").delay(100).animate({'opacity': 1,top:'220px',right:'100px'},1000);
 });

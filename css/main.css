@@ -204,7 +204,7 @@ body { font: 16px/1.8 "Microsoft Yahei",verdana;}
 .bg93 { position: absolute; left: 50%; bottom: 15%; width: 340px; margin-left: 630px; background: url(../images/bg93.png) 50% 0 no-repeat; opacity: 0; transition: all 1s;}
 .bg93 p { position: relative; left: -20px; padding-left: 100px; border-left: 1px solid #13AB86;}
 .bg10_1{ position: absolute; width: 100%; height: 100%; background: url(../images/1/flag_10.png) 50% 20% no-repeat; right: -2000px;}
-.bg10_2 { position: absolute; width: 633px; height: 630px; /* margin-left: -608px; */ margin-bottom: 40px; background: url(../images/redshape_left.png) 0 0 no-repeat; transition: all 1s;  opacity: 0; /* margin-left: -1108px; */ left: -800px;}
+.bg10_2 { position: absolute; width: 633px; height: 630px; /* margin-left: -608px; */ margin-bottom: 40px; background: url(../images/redshape_left.png) 0 0 no-repeat; /*transition: all 1s;  opacity: 0;  margin-left: -1108px; */ left: -800px;}
 .bg101 { position: absolute; width: 100%; height: 100%; background: url(../images/bg101.png) 50% 20% no-repeat;}
 .bg102 { position: absolute; width: 100%; top: 25%; height: 79px; background: url(../images/bg102.png) 50% 0 no-repeat; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
 .bg103 { position: absolute; width: 100%; top: 25%; height: 37px; margin-top: 110px; background: url(../images/bg103.png) 50% 0 no-repeat; opacity: 0; -webkit-transform:scale(0.5, 0.5); transform:scale(0.5, 0.5); transition: all 1s;}
@@ -267,7 +267,7 @@ body .section  .bg2-31_1{opacity: 1;transition-duration: 2s;  transition-delay: 
 .copyright { position: absolute; left: 0; bottom: 20px; width: 100%; text-align: center; font-size: 0;}
 .copyright a, .copyright span { margin: 0 7px; font-size: 12px; color: #a0a0a0;}
 .bg1111_11{ position: absolute; top: 0; width: 100%; height: 100%; /* background: url(../images/1/slide10_1.jpg) 50% 0 no-repeat; */ transition: all 0s;}
-.bg1111_1{ position: absolute; top: 0; width: 100%; height: 100%; /* background: url(../images/1/slide10_2.jpg) 50% 0 no-repeat; */ transition: all 1s;}
+.bg1111_1{ position: absolute; top: 0; width: 100%; height: 100%; /* background: url(../images/1/slide10_2.jpg) 50% 0 no-repeat;  transition: all 1s;*/}
 
 .bg1111_111 { position: absolute; top: 0; width: 100%; height: 100%; /* background: url(../images/1/slide10_1.jpg) 50% 0 no-repeat; */ transition: all 0s;}
 .bg1111_111 img,.bg1111_1 img,.bg1111_11 img{height: 100%}
@@ -320,13 +320,13 @@ body .section  .bg2-31_1{opacity: 1;transition-duration: 2s;  transition-delay: 
 .active .bg91 { margin-left: -570px; opacity: 1; transition-delay: 0.7s;}
 .active .bg92 { opacity: 1; transition-delay: 0.8s;}
 .active .bg93 { margin-left: 230px; opacity: 1; transition-delay: 0.7s;}
-.active .bg10_1{margin-left: 230px; opacity: 1; transition-delay: 2s;right: 100px;transition-duration: 1s;top: 20px;}
-.active .bg10_2 { bottom: 250px; opacity: 1; transition-delay: 1.7s; left: 0px;}
+.active .bg10_1{/*margin-left: 230px; opacity: 1; transition-delay: 2s;right: 100px;transition-duration: 1s;top: 20px;*/}
+.active .bg10_2 {/* bottom: 250px; opacity: 1; transition-delay: 1.7s; left: 0px;*/}
 .active .bg102, .active .bg103 { opacity: 1; -webkit-transform:scale(1, 1); transform:scale(1, 1); transition-delay: 0.7s;}
 .active .go { top: 25%; opacity: 1; transition-delay: 1.2s;}
 .active .bg111{right: 350px; opacity: 1; transition-delay: 0.7s;}
 .active .bg1111{/* left: 300px; */ opacity: 1; transition-delay: 0.7s;transition-duration: 6s;/* z-index: 99; *//* height: 100px; *//* margin-top: 80%; */}
-.active .bg1111_1{top:-2000px;/* left: 300px; */ opacity: 1;  transition-delay: 1.3s; transition-duration: 2s;/* z-index: 99; *//* height: 602px; *//* margin-top: 80%; */overflow: hidden;}
+.active .bg1111_1{/* top:-2000px; opacity: 1;  transition-delay: 1.3s; transition-duration: 2s;overflow: hidden;*/}
 .active .bg121{left: 200px; opacity: 1; transition-delay: 0.7s;}
 .active .bg131{/* left: -200px; */ /* opacity: 1; */ /* transition-delay: 0.5s; *//* transition-duration: 3.5s; *//* top: 2000px; */}
 .active .bg132{/* left: 900px; */ /* opacity: 1; */ /* transition-delay: 0.5s; */  /* transition-duration: 3.5s; *//* top: -2000px; */}

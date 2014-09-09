@@ -37,12 +37,7 @@ define([], function () {
 				$('.bg82').animate({bottom:'80px',right:'200px'},1000);
                //setTimeout(function(){$(".bg44").animate({top: 0,right: 0},1000);},0);
 		   }
-		   if(index==9){
-               $('.bg1111_1').delay(300).animate({top:'-2000px'},2000);
-				$('.bg1111').animate({opacity:0},6000);
-				$(".bg10_2").delay(1000).animate({'bottom': '250px',left:0},1000);
-			    $('.bg10_1').delay(1300).animate({'margin-left': '230px',right: '100px',top: '20px'},1000);
-		   }
+
 		   if(index==10){
 				//$('.bg121').animate({left:'200px'},1000);
 				$('.bg1111').animate({opacity:0},6000);
@@ -95,12 +90,7 @@ define([], function () {
 				$('.bg21').animate({top:0,right:'-800px'},1000);
 				$('.bg82').animate({bottom:'80px',right:'2000px'},1000);
 		   }
-		   if(index==9){
-				$('.bg1111').stop(true).animate({opacity:1},0);
-               $('.bg1111_1').animate({top:0},0);
-               $(".bg10_2").animate({left:'-800px'});
-               $('.bg10_1').animate({right: '-2000px'});
-		   }
+
 		   if(index==10){
 				$('.bg1111').stop(true).animate({opacity:1},0);
 				$('.bg111').animate({right:'2000px',opacity:0},1000);
