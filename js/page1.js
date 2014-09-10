@@ -33,7 +33,6 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
             }
             if(index==9){
                 $('.bg1111_1').delay(100).animate({top:'-2000px'},2000);
-                $('.bg1111').animate({opacity:0},6000);
                 $(".bg10_2").delay(200).animate({'bottom': '250px',left:0},1000);
                 $('.bg10_1').delay(300).animate({'margin-left': '230px',right: '100px',top: '20px'},1000);
             }
@@ -59,7 +58,6 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
                 $(".section13 .bg img").attr("src","images/1/slide131.jpg");
             }
             if(index==9){
-                $('.bg1111').stop(true).animate({opacity:1},0);
                 $('.bg1111_1').animate({top:0},0);
                 $(".bg10_2").animate({left:'-800px'});
                 $('.bg10_1').animate({right: '-2000px'});
