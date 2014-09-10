@@ -35,6 +35,7 @@ define(['ieextend','jquery-ui', 'jquery-fullPage', 'jquery-mousewheel','covering
                 $('.bg1111_1').delay(100).animate({top:'-2000px'},2000);
                 $(".bg10_2").delay(200).animate({'bottom': '250px',left:0},1000);
                 $('.bg10_1').delay(300).animate({'margin-left': '230px',right: '100px',top: '20px'},1000);
+
             }
 			
       			if(!Modernizr.csstransitions){
